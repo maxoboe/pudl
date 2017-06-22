@@ -1,7 +1,7 @@
 """A module to clone the FERC Form 1 Database from FoxPro to Postgres."""
 import os.path
-from pudl import settings
-import pudl.constants as pc
+import settings
+import constants as pc
 import sqlalchemy as sa
 import dbfread
 import string
@@ -39,7 +39,7 @@ def drop_tables_ferc1(engine):
 
 def datadir(year):
     """Given a year, return path to appropriate FERC Form 1 data directory."""
-    return os.path.join(settings.FERC1_DATA_DIR, 'f1_{}'.format(year))
+    return os.path.join(settings.FERC1_DATA_DIR, 'f1_{}'.format(year), 'working')
 
 
 def dbc_filename(year):
@@ -55,7 +55,7 @@ def get_strings(filename, min=4):
     grabbing database table and column names from the F1_PUB.DBC file that is
     distributed with the FERC Form 1 data.
     """
-    with open(filename, errors="ignore") as f:
+    with open(filename) as f:
         result = ""
         for c in f.read():
             if c in string.printable:

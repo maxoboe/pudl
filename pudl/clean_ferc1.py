@@ -11,8 +11,8 @@ with the appropriate NA values.
 
 import pandas as pd
 import numpy as np
-from pudl import clean_pudl
-import pudl.constants as pc
+import clean_pudl
+import constants as pc
 
 ##############################################################################
 # HELPER FUNCTIONS ###########################################################

@@ -9,12 +9,13 @@ This code is for use analyzing EIA Form 860 data.
 import pandas as pd
 import os.path
 import glob
-from pudl import settings
-import pudl.constants as pc
+
+import settings
+import constants as pc
 
 ###########################################################################
 # Helper functions & other objects to ingest & process Energy Information
-# Administration (EIA) Form 860 data.
+# Administration (EIA) Form 923 data.
 ###########################################################################
 
 

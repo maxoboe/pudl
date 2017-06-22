@@ -10,8 +10,9 @@ years 2009-2016 work, as they share nearly identical file formatting.
 import pandas as pd
 import os.path
 import glob
-from pudl import settings
-import pudl.constants as pc
+
+import settings
+import constants as pc
 
 ###########################################################################
 # Helper functions & other objects to ingest & process Energy Information

@@ -28,8 +28,8 @@ do (
         do
             if [ -d $base/$topdir ]
             then
-                mv $base/$topdir/FORM1/working/* $base
-                rmdir $base/$topdir/FORM1/working
+                mv $base/$topdir/FORM1/working $base
+                # rmdir $base/$topdir/FORM1/working
                 rmdir $base/$topdir/FORM1
                 rmdir $base/$topdir
             fi

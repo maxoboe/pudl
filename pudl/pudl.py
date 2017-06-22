@@ -24,12 +24,13 @@ import sqlalchemy as sa
 import postgres_copy
 import os.path
 
-from pudl import eia923, ferc1, eia860
-from pudl import settings
-from pudl import models, models_eia923, models_eia860
-from pudl import clean_ferc1, clean_pudl, clean_eia923
 
-import pudl.constants as pc
+import eia923, ferc1, eia860
+import settings
+import models, models_eia923, models_eia860
+import clean_ferc1, clean_pudl, clean_eia923
+
+import constants as pc
 
 ###############################################################################
 ###############################################################################
